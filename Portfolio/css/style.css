@@ -1,0 +1,90 @@
+/* Home Page Styles */
+html, body {
+    height: 100%; /* Ensure full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This makes the content stretch, pushing footer down */
+}
+
+.navbar {
+    padding: 2rem;
+    background: linear-gradient(to bottom, #3729B5, #18124F); /* Apply gradient */
+}
+
+.nav-link {
+    font-size: 1.1rem;
+}
+
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    flex-grow: 1; /* This allows the home-section to take up available space */
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+ .highlight {
+    color: #FF5A5F;
+}
+
+.image-content img {
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(to bottom, #3729B5, #18124F); /* Apply gradient */
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer .container {
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Style for slide-in-text animation */
+.slide-in-text {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideIn 2s ease-out forwards;
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes slideIn {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  
